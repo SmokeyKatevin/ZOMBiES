@@ -1,0 +1,399 @@
+FrameWidgetClass aTool
+{
+	visible 0
+	color 0 0 0 0
+	position 0 0
+	size 900 490
+	halign center_ref
+	valign center_ref
+	hexactpos 0
+	vexactpos 0
+	hexactsize 1
+	vexactsize 1
+	style EditorPanel
+
+	{
+        PanelWidgetClass bg
+        {
+			visible 1
+			color 0 0 0 0.9
+			position 0 0
+			size 660 490
+			hexactpos 1
+			vexactpos 1
+			hexactsize 1
+			vexactsize 1
+			style rover_sim_colorable
+
+			{
+				MultilineTextWidgetClass txt_guide
+				{
+					position 20 45
+					size 335 250
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text ""
+					font "gui/fonts/etelkatextpro48"
+					"exact text" 0
+					"text halign" left
+					"text valign" center
+					"text color" 0.933 0.933 0.933 1
+					wrap 1
+				}
+
+				TextWidgetClass search_text
+				{
+					position 20 110
+					size 350 25
+					valign bottom_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Spawn item / entity by classname:"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro22"
+				}
+				EditBoxWidgetClass search_input
+				{
+					position 20 65
+					color 0.4 0 0 1
+					size 620 40
+					valign bottom_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Class"
+					font "gui/fonts/etelkatextpro48"
+				}
+				ButtonWidgetClass btn_spawnItem
+				{
+					position 20 20
+					size 180 40
+					valign bottom_ref
+					halign left_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "On Cursor"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_spawnItemInv
+				{
+					position 205 20
+					size 180 40
+					valign bottom_ref
+					halign left_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "In Inventory"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_spawnItemAI
+				{
+					position 20 20
+					size 250 40
+					valign bottom_ref
+					halign right_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "AI entity on cursor"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+
+				ButtonWidgetClass btn_close
+				{
+					position 20 45
+					size 270 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Close"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_teleport
+				{
+					position 20 90
+					size 270 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Teleport"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_godmode
+				{
+					position 20 135
+					size 270 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Toggle Godmode"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_invisible
+				{
+					position 20 175
+					size 270 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Toggle Invisibility"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_spawnZombie
+				{
+					position 60 215
+					size 230 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Spawn A Zombie"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_spawnZombieMany
+				{
+					position 20 215
+					size 40 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "5"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_spawnWolf
+				{
+					position 60 255
+					size 230 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Spawn A Wolf"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_spawnWolfMany
+				{
+					position 20 255
+					size 40 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "5"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_removeEntity
+				{
+					position 60 300
+					size 230 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Delete entity"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro28"
+				}
+				ButtonWidgetClass btn_removeEntityMany
+				{
+					position 20 300
+					size 40 40
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Many"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro14"
+				}
+				ButtonWidgetClass btn_copyFromClipboard
+				{
+					position 20 355
+					size 270 25
+					halign right_ref
+					valign top_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Copy From clipboard"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro22"
+				}
+			}
+        }
+
+		PanelWidgetClass header
+		{
+			visible 1
+			color 0.439 0 0 0.95
+			position 0 0
+			size 660 35
+			hexactpos 1
+			vexactpos 1
+			hexactsize 1
+			vexactsize 1
+			style rover_sim_colorable
+
+			{
+				TextWidgetClass txt_header
+				{
+					position 20 0
+					size 1 0.6
+					halign left_ref
+					valign center_ref
+					hexactpos 1
+					vexactpos 0
+					hexactsize 0
+					vexactsize 0
+					text "DayZRP aTool"
+					font "gui/fonts/etelkatextpro22"
+				}
+				TextWidgetClass txt_credits
+				{
+					position 540 0
+					size 1 0.6
+					halign left_ref
+					valign center_ref
+					hexactpos 1
+					vexactpos 0
+					hexactsize 0
+					vexactsize 0
+					text "by Kerkkoh with <3"
+					font "gui/fonts/etelkatextpro14"
+				}
+			}
+		}
+
+        PanelWidgetClass bg_players
+        {
+			visible 1
+			color 0 0 0 0.9
+			position 670 0
+			size 230 490
+			hexactpos 1
+			vexactpos 1
+			hexactsize 1
+			vexactsize 1
+			style rover_sim_colorable
+			{
+				PanelWidgetClass header
+				{
+					visible 1
+					color 0.439 0 0 0.95
+					position 0 0
+					size 660 35
+					hexactpos 1
+					vexactpos 1
+					hexactsize 0
+					vexactsize 1
+					style rover_sim_colorable
+
+					{
+						TextWidgetClass txt_header
+						{
+							position 20 0
+							size 1 0.6
+							halign left_ref
+							valign center_ref
+							hexactpos 1
+							vexactpos 0
+							hexactsize 0
+							vexactsize 0
+							text "Players"
+							font "gui/fonts/etelkatextpro22"
+						}
+					}
+				}
+				TextListboxWidgetClass playerlist
+				{
+					visible 1
+					position 20 45
+					size 190 335
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					style Editor
+					lines 20
+					font "gui/fonts/etelkatextpro14"
+				}
+				ButtonWidgetClass btn_teleportToMe
+				{
+					position 20 65
+					size 190 40
+					halign left_ref
+					valign bottom_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Teleport to me"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro22"
+				}
+				ButtonWidgetClass btn_teleportToPlayer
+				{
+					position 20 20
+					size 190 40
+					halign left_ref
+					valign bottom_ref
+					hexactpos 1
+					vexactpos 1
+					hexactsize 1
+					vexactsize 1
+					text "Teleport to player"
+					"text color" 0.933 0.933 0.933 1
+					font "gui/fonts/etelkatextpro22"
+				}
+			}
+        }
+	}
+}
